@@ -21,11 +21,11 @@ resource "aws_route_table_association" "dev3" {
   route_table_id = "${aws_route_table.dev.id}" 
 } 
 
-resource "aws_route_table" "devforpriv" { 
+resource "aws_route_table" "nat_gw" { 
   vpc_id = "${aws_vpc.dev.id}" 
   route { 
     cidr_block = "0.0.0.0/0" 
-    nat_gateway_id = "${aws_nat_gateway.dev.id}" 
+    gateway_id = "${aws_nat_gateway.dev.id}" 
     } 
 }
 
@@ -35,7 +35,7 @@ resource "aws_route_table_association" "dev_private1" {
 } 
 
 resource "aws_route_table_association" "dev_private2" { 
-  subnet_id = "${aws_subnet.dev_private_2.id}" 
+  subnet_id = "${aws_subnet.dev_private2.id}" 
   route_table_id = "${aws_route_table.devforpriv.id}" 
 } 
 
