@@ -37,3 +37,11 @@ output "dynamodb_table" {
 output "ngw" {
     value = "${aws_nat_gateway.nat_gw.id}"
 }
+
+output "web_sec_group" {
+  value = "${aws_security_group.web_sec_group.name}"
+}
+
+output "mysql_sec_group" {
+  value = "${aws_security_group.mysql_sec_group.name}"
+}

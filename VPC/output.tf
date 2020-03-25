@@ -37,3 +37,10 @@ output "dynamodb" {
 output "NGW" {
     value = "${module.dev.ngw}"
 }
+
+output "sec_group_1" {
+  value = "${module.dev.web_sec_group}"
+}
+output "sec_group_2" {
+  value = "${module.dev.mysql_sec_group}"
+}
