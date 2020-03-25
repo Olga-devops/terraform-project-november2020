@@ -33,3 +33,7 @@ output "IGW" {
 output "dynamodb_table" {
   value = "terraform-team1"
 }
+
+output "ngw" {
+    value = "${aws_nat_gateway.nat_gw.id}"
+}
