@@ -1,10 +1,9 @@
 resource "aws_s3_bucket" "b" {
-   provider    =  "aws.virginia"
   bucket = "terraform-project-backend-2020"
-
+  acl    = "private"
 
   tags = {
     Name        = "My bucket"
-    Environment = "dev"
+    Environment = "Dev"
   }
 }
