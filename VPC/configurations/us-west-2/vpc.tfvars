@@ -2,7 +2,7 @@
 environment                     =   "oregon"
 region                          =   "us-west-2"
 
-s3_bucket                       =	"terraform-olga"
+s3_bucket                       =	"terraform-project-backend-2020"
 s3_folder_region                =	"us-east-1"
 
 
