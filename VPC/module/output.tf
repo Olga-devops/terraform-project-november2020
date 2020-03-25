@@ -30,3 +30,6 @@ output "IGW" {
     value = "${aws_internet_gateway.dev.id}"
 }
 
+output "dynamodb_table" {
+  value = "terraform-team1"
+}

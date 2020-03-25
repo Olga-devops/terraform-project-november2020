@@ -30,3 +30,6 @@ output "IGW" {
     value = "${module.dev.IGW}"
 }
 
+output "dynamodb" {
+  value = "${dynamodb_table}"
+}
