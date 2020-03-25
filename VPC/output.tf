@@ -31,5 +31,5 @@ output "IGW" {
 }
 
 output "dynamodb" {
-  value = "${dynamodb_table}"
+  value = "${module.dev.dynamodb_table}"
 }
