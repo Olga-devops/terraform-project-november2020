@@ -1,6 +1,6 @@
 resource "aws_nat_gateway" "nat_gw" {
   allocation_id = "${aws_eip.nat.id}"
-  subnet_id     = "${aws_subnet.public.id}"
+  subnet_id     = "${aws_subnet.dev1.id}"
 
   tags = {
     Name = "gw NAT"
