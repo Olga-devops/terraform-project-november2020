@@ -1,6 +1,7 @@
 resource "aws_security_group" "web_sec_group" { 
 name = "web_sec_group" 
 description = "Allows ports 22 80 and 443" 
+vpc_id  = "${aws_vpc.dev.id}"
 
 
 
@@ -43,6 +44,7 @@ Name = "web-sg"
 resource "aws_security_group" "mysql_sec_group" { 
 name = "mysql_sec_group" 
 description = "Allows ports 3306 and 22" 
+vpc_id  =  "${aws_vpc.dev.id}"
 
 
 
