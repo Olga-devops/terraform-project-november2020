@@ -39,9 +39,9 @@ output "ngw" {
 }
 
 output "web_sec_group" {
-  value = "${aws_security_group.web_sec_group.name}"
+  value = "${aws_security_group.web_sec_group.id}"
 }
 
 output "mysql_sec_group" {
-  value = "${aws_security_group.mysql_sec_group.name}"
+  value = "${aws_security_group.mysql_sec_group.id}"
 }
