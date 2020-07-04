@@ -6,6 +6,7 @@ This Repo is used to create an infrastructure on AWS in US regions.
 Prerequisites:
 Download terraform 0.11.14 
 Link of terraform 0.11.14 - https://releases.hashicorp.com/terraform/0.11.14/terraform_0.11.14_linux_amd64.zip
+s3 bucket should be created
 
 provider.aws: version = "~> 2.54"
 
